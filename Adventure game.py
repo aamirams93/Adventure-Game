@@ -1,11 +1,9 @@
 import time
 import random
 
-
 def print_pause(msg_to_print):
     print(msg_to_print)
     time.sleep(2)
-
 
 def intro(item, option):
     print_pause("You find yourself standing in an open field, filled "
@@ -16,7 +14,6 @@ def intro(item, option):
     print_pause("To your right is a dark cave.\n")
     print_pause("In your hand you hold your trusty (but not very "
                 "effective) dagger.\n")
-
 
 def cave(item, option):
     if "sward" in item:
@@ -36,7 +33,6 @@ def cave(item, option):
         print_pause("\nYou walk back out to the field.\n")
         item.append("sward")
     field(item, option)
-
 
 def house(item, option):
     print_pause("\nYou approach the door of the house.")
@@ -107,6 +103,5 @@ def play_game():
                             "gorgon"])
     intro(item, option)
     field(item, option)
-
 
 play_game()
