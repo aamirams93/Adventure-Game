@@ -6,7 +6,7 @@ def print_pause(msg_to_print):
     time.sleep(2)
 
 def intro(item, option):
-    print_pause("You find yourself standing in an open field, filled "
+    print_pause("You find yourself standing in an open field, filleds "
                 "with grass and yellow wildflowers.\n")
     print_pause("Rumor has it that a " + option + " is somewhere around "
                 "here, and has been terrifying the nearby village.\n")
